@@ -1,16 +1,29 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Invstr</title>
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <meta charset="utf-8" />
+    <title>Invstr - Free Property Investment Analysis Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no" />
     <%= csrf_meta_tags %>
 
+    <%= stylesheet_link_tag    'light', media: 'all', 'data-turbolinks-track': 'reload' %> 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= stylesheet_link_tag    'jquery.scrollbar', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= stylesheet_link_tag    'select2.min', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= stylesheet_link_tag    'switchery.min', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= stylesheet_link_tag    'pages-icons', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag    'nv.d3.min', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag    'rickshaw.min', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag    'datepicker3', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag    'mapplic', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag    'dashboard.widgets', media: 'all', 'data-turbolinks-track': 'reload' %> 
+
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
    	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+   	<link href="assets/plugins/pace/pace-theme-flash.css" rel="stylesheet" type="text/css" />
+
+<link class="main-stylesheet" href="pages/css/themes/light.css" rel="stylesheet" type="text/css" />
 
     <%= javascript_include_tag 'feather.min', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'pace.min', 'data-turbolinks-track': 'reload' %>
@@ -29,29 +42,26 @@
     <%= javascript_include_tag 'switchery.min', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'interact.min', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'moment-with-locales.min', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'd3.v3', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'utils', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'tooltip', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'axis', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'line', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'lineWithFocusChart', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'rickshaw.min', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'hammer', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'jquery.mousewheel', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'mapplic', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'dashboard', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'scripts', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'pages.min', 'data-turbolinks-track': 'reload' %>
 
-
-
-   
-
-<!-- bootstrap js.min CDN --> 
-
-
-
-   
-    
-
-   
-	
-
-
-    
-   
 
 
   </head>
 
   <body>
+
     <%= yield %>
   </body>
 </html>
